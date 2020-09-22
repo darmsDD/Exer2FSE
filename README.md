@@ -11,6 +11,7 @@ Clone o repositório para o seu computador local.
 
 ### Solução em C
 * Entre na pasta c
+* Entre na pasta examples
 * Execute make clean caso exista algum make já existente
 * Execute make
 * Depois rode o código com ./bme280 /dev/i2c-1
