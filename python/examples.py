@@ -22,12 +22,11 @@ while True:
 
 	# mylcd.lcd_display_string("Temperatura: ", 1)
 	# mylcd.lcd_display_string(str(dado.temperature), 2)
+	temperatura = "T=" + "{:.2f} ".format(dado.temperature)
+	umidade = "U=" + "{:.2f}%".format(dado.humidity)
+	pressao = "P="+ "{:.2f}".format(dado.pressure)
 
-	temperatura = "Temp. " + "{:.2f} ".format(dado.temperature)
-	umidade = "Umid. " + "{:.2f}% ".format(dado.humidity)
-	pressao = "Pressao. "+ "{:.2f} ".format(dado.pressure)
-
-	print(temperatura+pressao+umidade)
+	print(temperatura+pressao+' '+umidade)
 	#print(umidade)
 	#print(pressao)
 	mylcd.lcd_display_string(temperatura+pressao, 1)
